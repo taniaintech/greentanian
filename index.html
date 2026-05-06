@@ -1,0 +1,515 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Tania Green Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: white;
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 8px;
+
+  max-height: 80vh;     /* limits height */
+  overflow-y: auto;     /* enables scroll */
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+.modal-content h1 {
+  font-size: 28px;   /* try 24px–32px */
+  margin-bottom: 10px;
+}
+
+.modal-content h2 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.modal-content p,
+.modal-content li {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Tania Green,<br />
+						PMP</h1>
+						<p>Specializing in process automation and transformation. <br />
+						Unleashing potential through innovative solutions. <br />
+						<a href="https://www.linkedin.com/in/taniagreen03">@taniagreen03</a><br />
+						</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Case Studies</a></li>
+							<li class="active"><a href="generic.html">Experience</a></li>
+							<li><a href="elements.html">Tools</a></li>
+						</ul>
+						<ul class="icons">
+							<li>
+								<a href="https://github.com/taniaintech" class="icon brands fa-github" target="_blank">
+    								<span class="label">GitHub</span>
+  								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/taniagreen03/" class="icon brands fa-linkedin" target="_blank">
+									<span class="label">LinkedIn</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2><a href="#">Enterprise System Upgrade</a></h2><br />
+									<p>Supported the execution of enterprise system upgrades (Deltek Costpoint, Cognos BI, and Unanet Sub Time),<br />
+									coordinating across planning, testing, cutover, and post-go-live phases to improve visbility, issue tracking, and delivery alignment.<br />
+									</p>
+								</header>
+								<a href="#" class="image main"><img src="images/Deltek_Costpoint.png" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="#" class="button large" onclick="openModal('costpointModal')">View Project</a></li>
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<h2><a href="#">Identity Management Platform Migration<br /></a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/identityaccess.jpeg" alt="" /></a>
+									<p>Supported the migration of the organization’s identity management system from Microsoft Identity Manager (MIM) to Cayosoft, improving access management processes and supporting businss continuity.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button" onclick="openModal('identityModal')">View Project</a></a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="#">Domain Migration<br /></a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/domainmigration.webp" alt="" /></a>
+									<p>Supported a large-scale domain migration, ensuring continuity of vendor communication, billing processes, and contract operations during the transition.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button" onclick="openModal('domainModal')">View Project</a></a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="#">Automated Requests for T&E Reporting<br /></a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/timeandexpense.jpg" alt="" /></a>
+									<p>Automated the monthly time and expense reporting process for 20+ subcontractors, improving efficiency, accuracy, and scalability.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button" onclick="openModal('automationModal')">View Project</a></a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="#">Subcontractor Onboarding Process Improvement<br /></a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/onboarding.png" alt="" /></a>
+									<p>Streamlined subcontractor onboarding by implementing a SharePoint-based workflow to track citizenship attestations, approvals, and onboarding status across teams.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button" onclick="openModal('subcontractorModal')">View Project</a></a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="#">Invoice Approval and Submission Automation<br /></a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/invoices.webp" alt="" /></a>
+									<p>Coordinated with a SME to automate the invoice approval and submission process, reducing manual effort, improving audit tracking, and minimizing payment delays.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button" onclick="openModal('invoiceModal')">View Project</a></a></li>
+									</ul>
+								</article>
+							</section>
+
+						<!-- Footer -->
+							<footer>
+								<div class="pagination">
+									<!--<a href="#" class="previous">Prev</a>-->
+									<a href="#" class="page active">1</a>
+									<a href="#" class="page">2</a>
+									<a href="#" class="page">3</a>
+									<span class="extra">&hellip;</span>
+									<a href="#" class="page">8</a>
+									<a href="#" class="page">9</a>
+									<a href="#" class="page">10</a>
+									<a href="#" class="next">Next</a>
+								</div>
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Let's work together.</h2>
+							<a href="mailto:taniagreen03@gmail.com?subject=Project%20Management%20Opportunity" class="button large">Send Message</a>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Location</h3>
+								<p>Northern Virginia/Washington, D.C.</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(703) 586-7690</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">taniagreen03@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li>
+										<a href="https://github.com/taniaintech" class="icon brands fa-github" target="_blank">
+    										<span class="label">GitHub</span>
+  										</a>
+									</li>
+									<li>
+										<a href="https://www.linkedin.com/in/taniagreen03/" class="icon brands fa-linkedin" target="_blank">
+											<span class="label">LinkedIn</span>
+										</a>
+									</li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; 2026 Tania Green</li></ul>
+						<ul><li>Project Manager | Western Governors University</li></ul>
+					</div>
+
+			</div>
+
+						<div id="costpointModal" class="modal">
+						<div class="modal-content">
+							<button class="close" onclick="closeModal('costpointModal')">&times;</button>
+
+							<h1>Enterprise System Upgrade</h1>
+
+							<h2>Overview</h2>
+							<p>Served as Deputy PM supporting the execution of enterprise system upgrades impacting <b>10,000+ employees</b>, with a focus on testing coordination, cutover readiness, and post-go-live stabilization.</p>
+
+							<h2>The Challenge</h2>
+							<p>The upgrade required coordination across projects and teams, including technical, functional, and business stakeholders. There was ambiguity around: <br />
+							<ul>
+							<li>Risks, issues, and dependencies</li>
+							<li>Testing environments</li>
+							<li>Upgrade and refresh dates</li>
+							<li>Cutover readiness and task ownership</li>
+							<li>Post-go-live stabilization efforts</li>
+
+							</ul></p>
+
+							<h2>What I Did</h2>
+							<ul>
+							<li>Supported test execution across three full test cycles</li>
+							<li>Managed test execution in Zephyr for <b>500+ scripts</b> and built dashboards to provide real-time visibility into pass/fail/block status</li>
+							<li>Led daily triage meetings with technical and functional teams to address defects and unblock testing</li>
+							<li>Prioritized cutover readiness by separating critical defects from non-blocking issues</li>
+							<li>Assisted in tracking cutover readiness and execution activities</li>
+							<li>Coordinated tracking and resolution for <b>30+ issues</b> impacting business operations during post-go-live</li>
+							<li>Captured lessons learned and process improvement opportunities</li>
+							<li>Highlighted gaps in script validation and documentation for future upgrades</li>
+							</ul>
+
+							<h2>Business Impact and Outcomes</h2>
+							<ul>
+								<li>Improved visibility into testing progress, enabling faster decision-making</li>
+								<li>Reduced delays by prioritizing cutover-critical defects</li>  
+								<li>Increased accountability through structured triage and tracking</li>
+								<li>Managed resolution of post-upgrade issues impacting critical processes such as reporting and month-end payment activities</li>
+ 								<li>Supported on-time completion of testing cycles</li>
+							</ul>
+
+						</div>
+						</div>
+						<div id="identityModal" class="modal">
+						<div class="modal-content">
+							<button class="close" onclick="closeModal('identityModal')">&times;</button>
+
+							<h1>Identity Management Platform Migration</h1>
+
+							<h2>Overview</h2>
+							<p>Supported the migration from Microsoft Identity Manager (MIM) to Cayosoft, ensuring IT users maintained proper access and were successfully transitioned to a new identity management system.</p>
+							<p>Helped support user access, onboarding, and system adoption during the transition to a new platform.</p>
+							
+							<h2>The Challenge</h2>
+							<p>
+							The migration required transitioning users to a new identity management system while maintaining uninterrupted access and ensuring accuracy of permissions and security groups. Challenges included:
+							</p>
+
+							<ul>
+								<li>Maintaining uninterrupted access for <b>300+</b>IT users during system transition</li>
+								<li>Ensuring users were assigned to correct <strong>security groups</strong></li>
+								<li>Supporting onboarding of new users in a new system environment</li>
+								<li>Adapting to a new platform and processes during migration</li>
+							</ul>
+							
+
+							<h2>What I Did</h2>
+							<ul>
+								<li>Tracked migration activities, dependencies, and <strong>user access impact</strong></li>
+								<li>Validated that users were correctly synced and assigned to appropriate <strong>security groups</strong></li>
+								<li>Supported onboarding of new users in Cayosoft, ensuring proper system access</li>
+								<li>Acted as a point of contact for <strong>access-related issues</strong> during and after migration</li>
+								<li>Helped troubleshoot and resolve user access issues as they arose</li>
+							</ul>
+
+							<h2>Business Impact and Outcomes</h2>
+							<ul>
+								<li>Maintained continuity of <strong>IT user access</strong> during system migration</li>
+								<li>Reduced risk of <strong>access issues</strong> through validation of user permissions and security groups</li>
+								<li>Improved onboarding consistency for new users in the updated system</li>
+								<li>Supported a smooth transition to a new identity management platform</li>
+							</ul>
+
+						</div>
+						</div>
+<div id="domainModal" class="modal">
+  <div class="modal-content">
+    <button class="close" onclick="closeModal('domainModal')">&times;</button>
+
+    <h1>Commercial to Defense Domain Migration</h1>
+
+    <h2>Overview</h2>
+    <p>Supported the migration from @accenturefederal.com to @afs.com, ensuring continuity of vendor communication, billing processes, and contract-related operations during a large-scale domain transition.</p>
+    
+	<h2>The Challenge</h2>
+	<p>The domain transition impacted how external vendors and internal stakeholders communicated, creating risk to billing, contract management, and ongoing operations if not properly coordinated. My role included:</p>
+	<ul>
+		<li>Ensuring vendors could continue submitting invoices and communicating effectively</li>
+		<li>Ensure critical emails were not missed (invoices, payment inquiries, requests for signature)</li>
+		<li>Preventing disruption to contract-related communications</li>
+		<li>Managing updates to email domains across stakeholders and systems</li>
+		<li>Maintaining continuity of business operations during the transition</li>
+	</ul>
+    
+	<h2>What I Did</h2>
+    <ul>
+		<li>Coordinated <strong>change management</strong> across internal users and external vendors during the domain transition</li>
+		<li>Implemented <strong>automated notifications</strong> to inform vendors of domain changes and updated contact information</li>
+		<li>Worked with vendors to update login credentials and ensure continued access to billing and support systems</li>
+		<li>Helped redirect vendors to the correct channels for invoice submission and communication</li>
+		<li>Acted as a point of contact for <strong>communication and access issues</strong> during the transition</li>
+		<li>Helped resolve disruptions related to email, contracts, and vendor communication</li>
+	</ul>
+    
+    <h2>Business Impact and Outcomes</h2>
+    <ul>
+		<li>Maintained continuity of <strong>vendor billing and invoice submission</strong> during the domain transition</li>
+		<li>Reduced risk of <strong>access disruptions</strong> across users and vendors</li>
+		<li>Ensured critical communications related to contracts and payments were not missed</li>
+		<li>Supported uninterrupted business operations during a large-scale organizational transition</li>
+	</ul>
+
+  </div>
+</div>
+<div id="automationModal" class="modal">
+  <div class="modal-content">
+    <button class="close" onclick="closeModal('automationModal')">&times;</button>
+
+    <h1>Automated Data Requests for Supplier T&E Reporting</h1>
+
+    <h2>Overview</h2>
+    <p>Automated the monthly time and expense (T&E) reporting process for subcontractors, replacing a manual and time-consuming workflow with a centralized and scalable solution.</p>
+
+<p>
+Designed a process that leveraged SharePoint and scheduled automation to ensure consistent vendor communication, improve reporting accuracy, and simplify ongoing maintenance as vendors and stakeholders changed.
+</p>
+    <h2>The Challenge</h2>
+    <p>To support monthly accruals, vendors were required to submit reports with actual hours/expenses and estimated remaining costs. This process was handled manually and became increasingly difficult to manage.</p>
+
+	<ul>
+		<li>Manual emails sent to <strong>20+ vendors</strong> each month</li>
+		<li>Customized messaging required for each vendor</li>
+		<li>New vendors were sometimes missed, creating risk to reporting accuracy</li>
+		<li>Frequent updates needed as vendors or managers changed</li>
+		<li>Limited visibility and inconsistent tracking of submissions</li>
+	</ul>
+    
+	<h2>What I Did</h2>
+    <ul>
+		<li>Designed and implemented an <strong>automated workflow</strong> to distribute monthly T&E reporting requests</li>
+		<li>Built and maintained a <strong>SharePoint list</strong> to manage vendor contacts/distribution lists</li>
+		<li>Coordinated testing with a developer to ensure workflow functionality and accuracy</li>
+		<li>Maintained ongoing updates to reflect changes in vendors, managers, and reporting requirements</li>
+</ul>
+
+    <h2>Business Impact and Outcomes</h2>
+   <ul>
+	<li>Eliminated manual outreach to <strong>20+ vendors</strong> each month</li>
+	<li>Reduced risk of missed vendors through a <strong>centralized and automated process</strong></li>
+	<li>Improved efficiency and reduced time spent on monthly reporting coordination</li>
+	<li>Increased accuracy of accrual reporting by ensuring consistent vendor submissions</li>
+	<li>Enhanced scalability and maintainability of the process as vendors and teams changed</li>
+</ul>
+
+  </div>
+</div>
+<div id="subcontractorModal" class="modal">
+  <div class="modal-content">
+    <button class="close" onclick="closeModal('subcontractorModal')">&times;</button>
+
+    <h1>Subcontractor Onboarding Process Improvement</h1>
+
+    <h2>Overview</h2>
+	<p>Supported the implementation of a new subcontractor onboarding requirement where vendors were required to provide citizenship attestations prior to onboarding.</p>
+
+<p>
+Introduced a centralized tracking and workflow solution to improve visibility, coordination, and timing across procurement, subcontracts, and PMO teams.
+</p>
+    <h2>The Challenge</h2>
+    <p>The introduction of a new compliance requirement created confusion and delays in the onboarding process due to lack of clarity, ownership, and tracking.</p>
+
+	<ul>
+		<li>No visibility into where contractors were in the onboarding process</li>
+		<li>Unclear timing for when onboarding could begin</li>
+		<li>Misalignment between procurement, subcontracts, and PMO teams</li>
+		<li>Delays caused by dependency on citizenship attestation before onboarding</li>
+		<li>Inconsistent communication with vendors and internal stakeholders</li>
+	</ul>
+    <h2>What I Did</h2>
+	<ul>
+		<li>Designed and implemented a <strong>SharePoint-based tracking system</strong> to centralize onboarding status and requirements</li>
+		<li>Created a workflow to trigger the subcontracts team when a new contractor onboarding request was submitted</li>
+		<li>Enabled real-time tracking of key steps such as attestation status, purchase requisitions, and equipment requests</li>
+		<li>Coordinated across procurement, subcontracts, and PMO teams to ensure alignment on onboarding timelines</li>
+		<li>Tracked approvals and followed up on dependencies to prevent delays in meeting contract start dates</li>
+		<li>Developed <strong>standard operating procedures (SOPs)</strong> to clarify process steps, ownership, and timelines</li>
+		<li>Improved communication between teams to ensure timely updates and reduce process ambiguity</li>
+	</ul>
+
+    <h2>Business Impact and Outcomes</h2>
+    <ul>
+		<li>Improved visibility into <strong>onboarding status and dependencies</strong> across teams</li>
+		<li>Reduced delays by creating a structured and trackable onboarding workflow</li>
+		<li>Increased accountability by clearly defining ownership and process steps</li>
+		<li>Improved alignment between procurement, subcontracts, and PMO teams</li>
+		<li>Enabled more accurate contractor start dates through better process transparency</li>
+	</ul>
+
+  </div>
+</div>
+<div id="invoiceModal" class="modal">
+  <div class="modal-content">
+    <button class="close" onclick="closeModal('invoiceModal')">&times;</button>
+
+    <h1>Automated Invoice Approval and Submission</h1>
+
+    <h2>Overview</h2>
+    <p>Streamlined the invoice approval and submission process by replacing a manual, duplicative workflow with an automated solution that improved efficiency and audit tracking.</p>
+	<p>Collaborated with an automation specialist to design, test, and implement a workflow that reduced manual effort, improved approval visibility, and minimized delays in vendor payments.</p>
+    <h2>The Challenge</h2>
+    <p>Managers approved contractor time within vendor systems, but a second approval was required internally for audit purposes. This created a repetitive and manual process. Painpoints included:</p>
+
+	<ul>
+		<li>Manual distribution of invoices to managers for approval</li>
+		<li>Frequent follow-ups required to obtain responses</li>
+		<li>Time-consuming tracking of approvals across emails</li>
+		<li>Risk of missed approvals and delayed payments</li>
+		<li>Lack of centralized visibility into invoice status</li>
+	</ul>
+    <h2>What I Did</h2>
+    <ul>
+		<li>Partnered with an automation specialist to support development of an <strong>invoice approval workflow</strong></li>
+		<li>Provided business requirements, including form structure, data fields, and approval routing</li>
+		<li>Recommended enhancements such as <strong>multi-recipient notifications</strong> and automated reminders</li>
+		<li>Coordinated testing to validate approval and rejection scenarios</li>
+		<li>Identified and resolved workflow issues, including errors caused by missing or improperly formatted data</li>
+		<li>Supported ongoing troubleshooting to ensure process reliability</li>
+	</ul>
+
+    <h2>Business Impact and Outcomes</h2>
+    <ul>
+		<li>Reduced manual effort associated with invoice approval and follow-ups</li>
+		<li>Improved <strong>tracking and visibility</strong> of invoice approval status</li>
+		<li>Decreased risk of missed approvals and delayed vendor payments</li>
+		<li>Strengthened audit readiness through a more structured approval process</li>
+		<li>Increased process efficiency and reliability through automation</li>
+	</ul>
+  </div>
+</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+function openModal(id) {
+  document.getElementById(id).style.display = "block";
+}
+
+function closeModal(id) {
+  document.getElementById(id).style.display = "none";
+}
+</script>
+<script>
+window.onclick = function(event) {
+  const modals = document.querySelectorAll('.modal');
+  modals.forEach(modal => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+}
+</script>
+		
+	</body>
+</html>
